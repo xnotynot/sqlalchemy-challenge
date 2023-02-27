@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Hawaii Weather API</title>
+
+    </head>
+  </head>
+  <div class="container">
+      <body>
+          <h1><strong>Weather Data - Hawaii, Honolulu</strong></h1>
+          <p>Welcome to the Hawaii, Honolulu Weather Data API Hawaii! Use the following API guidelines to access the appropriate data</p>
+          <h2>API Documentation</h2>
+          <p>URL to access the APIs <code>http://localhost:5009</code> to get the appropriate dataset. All responses are in JSON format.</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Route</th>
+        <th>URL</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Precipitation</td>
+        <td>/api/v1.0/precipitation</td>
+        <td>Returns Precipitation Value for last 12 months grouped by date.<br>URL: <br><a href="http://localhost:5009/api/v1.0/precipitation">/api/v1.0/precipitation</a></td>
+      </tr>
+      <tr>
+        <td>Stations</td>
+        <td>/api/v1.0/stations</td>
+        <td>Returns list of stations from the dataset.<br>URL: <br><a href="http://localhost:5009/api/v1.0/stations">/api/v1.0/stations</a></td>
+      </tr>
+      <tr>
+        <td>Temperature</td>
+        <td>/api/v1.0/tobs</td>
+        <td>Temperature observations from a year from the last data point.
+          <br>URL: <br><a href="http://localhost:5009/api/v1.0/tobs">/api/v1.0/tobs</a></td>
+      </tr>
+      <tr>
+          <td>Temperature Calculations</td>
+          <td>/api/v1.0/Start Date<br>/api/v1.0/Start Date/End Date</td>
+          <td>Returns a list average temperature, minimum temperature, and maximum temperature for a given start or start-end range.
+            Expected Date format<em>Year-Month-Day (YYYY-MM-DD) format.</em><br>
+            <br><mark>/api/v1.0/Start Date</mark><br>
+              <strong><a href="http://localhost:5009/api/v1.0/2016-01-08">/api/v1.0/2016-01-08</a></strong>
+              <br>Returns the temperature min,ave and max for the time period greater than, or equal to 2010-01-08.<br>
+              <br><mark>/api/v1.0/Start Date/End Date</mark>
+              <br>When given the start and the end date, Returns the average, minmum and maximum temperatures between the start and end date
+              <br>For Example - <br>
+              <strong>
+                <a href="http://localhost:5009/api/v1.0/2016-01-01/2016-01-08">/api/v1.0/2016-01-01/2016-01-08</a></strong>
+                <br>Returns the temperature min,ave and max for a given period, including the two dates.<br>
+              
+        </tr>
+        <tr>
+    </tbody>
+  </table>
+      
+      
+        </body>
+
+  </div>
+
+</html>
